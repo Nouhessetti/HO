@@ -16,11 +16,12 @@ import WebDevelopmentPage from "./pages/WebDevelopmentPage";
 import DataSciencePage from "./pages/DataSciencePage";
 import NewsCategoriesPage from "./pages/NewsCategoriesPage";
 import KataPage from "./pages/KataPage";
+import Katapage2 from "./pages/Katapage2";
 import TrainingPage from "./pages/TrainingPage";
 import AdminDashboard from "./pages/AdminDashboard";
 import Profile from "./pages/Profile"; // 1. Import the new Profile page
 import NotFound from "./pages/NotFound";
-
+import Train from "./pages/Train";
 const queryClient = new QueryClient();
 
 // A helper component to protect private routes
@@ -47,7 +48,9 @@ const App = () => (
                 <Route path="/courses/data-science" element={<DataSciencePage />} />
                 <Route path="/news/categories" element={<NewsCategoriesPage />} />
                 <Route path="/kata" element={<KataPage />} />
+                <Route path="/kata2" element={<Katapage2 />} />
                 <Route path="/training" element={<TrainingPage />} />
+                <Route path='/train' element={<Train />} />
                 
                 {/* 2. Added Protected Profile Route */}
                 <Route 

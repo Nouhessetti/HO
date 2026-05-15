@@ -1,0 +1,51 @@
+.sidebar{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    
+   
+  
+}
+.options_containner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    background: #33444b72;
+    padding: 5px ;
+    height: fit-content;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.level{
+    background-color: #424a4a;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.Train_skip_btn{
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+margin: 30px auto;
+}
+.Train_skip_btn > button{
+    border: none;
+    width: 40%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: #3F5EFB;
+
+}
+.train_btn{
+    background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 18%, rgba(87, 199, 133, 1) 58%, rgba(237, 221, 83, 1) 95%) !important;
+}

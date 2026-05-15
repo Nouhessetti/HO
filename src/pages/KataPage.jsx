@@ -293,8 +293,8 @@ const KataPage = () => {
                           {currentExercise.title}
                         </h2>
                       </div>
-
-                      <div className="space-y-4 text-gray-800 leading-relaxed">
+{/*------------pdf reader section------------*/}
+                    {/*--  <div className="space-y-4 text-gray-800 leading-relaxed">
                         <div>
                           <h3 className="text-lg font-semibold text-gray-900 mb-2">Problem Statement</h3>
                           <p className="text-justify">
@@ -317,7 +317,15 @@ const KataPage = () => {
                             </code>
                           </div>
                         )}
-                      </div>
+                      </div>  --*/}
+   <div className="w-full h-[600px] border rounded overflow-hidden">
+  <iframe
+    src={"https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"}
+    className="w-full h-full"
+    title="PDF Viewer"
+  />
+</div>
+ {/*------------------------*/}
 
                       <div className="border-t-2 border-gray-300 pt-4 mt-8">
                         <div className="flex justify-between items-center text-sm text-gray-600">

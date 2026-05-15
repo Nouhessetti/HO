@@ -24,6 +24,7 @@ const NavLinks = ({ className, mobile = false }) => {
       ]
     },
     { name: 'Kata', path: '/kata' },
+    { name: 'Kata2', path: '/kata2' },
     { name: 'Admin', path: '/admin' },
   ];
 
@@ -43,7 +44,7 @@ const NavLinks = ({ className, mobile = false }) => {
                 className={`nav-item text-base font-medium transition-colors duration-200
                   ${isActive
                     ? 'text-blue-600 dark:text-blue-400'
-                    : 'text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400'
+                    : 't http://localhost:5173/ext-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400'
                   }`}
               >
                 {link.name}

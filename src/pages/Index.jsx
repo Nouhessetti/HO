@@ -27,76 +27,97 @@ const Index = () => {
       <main className="flex-1 pt-20 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
         <div className="container mx-auto px-4 py-12">
           {/* Hero Section with Neural Background */}
-          <section className="text-center max-w-4xl mx-auto relative">
-            {/* Background Image with Overlay */}
-            <div 
-              className="absolute inset-0 -z-10 rounded-3xl bg-cover bg-center bg-no-repeat"
-              style={{
-                backgroundImage: `url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1920&auto=format&fit=crop)`,
-              }}
-            >
-              <div className="absolute inset-0 bg-black/60 rounded-3xl"></div>
-              
-              <div className="absolute inset-0 opacity-30 dark:opacity-40 rounded-3xl">
-                <div 
-                  className="w-full h-full bg-gradient-to-br from-blue-500/30 via-purple-500/20 to-teal-500/30"
-                  style={{
-                    backgroundImage: `
-                      radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.2) 0%, transparent 50%),
-                      radial-gradient(circle at 80% 20%, rgba(147, 51, 234, 0.2) 0%, transparent 50%),
-                      radial-gradient(circle at 40% 60%, rgba(20, 184, 166, 0.2) 0%, transparent 50%),
-                      radial-gradient(circle at 70% 80%, rgba(99, 102, 241, 0.2) 0%, transparent 50%)
-                    `,
-                    backgroundSize: '60px 60px, 80px 80px, 100px 100px, 120px 120px'
-                  }}
-                />
-                
-                <div className="absolute inset-0">
-                  <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-                  <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 bg-purple-400 rounded-full animate-pulse delay-100"></div>
-                  <div className="absolute bottom-1/3 left-1/3 w-2.5 h-2.5 bg-teal-400 rounded-full animate-pulse delay-200"></div>
-                  <div className="absolute top-2/3 right-1/4 w-1 h-1 bg-indigo-400 rounded-full animate-pulse delay-300"></div>
-                  <div className="absolute bottom-1/4 right-2/3 w-2 h-2 bg-cyan-400 rounded-full animate-pulse delay-150"></div>
-                  <div className="absolute top-1/2 left-1/2 w-1.5 h-1.5 bg-violet-400 rounded-full animate-pulse delay-75"></div>
-                  
-                  <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="rgba(59, 130, 246, 0.4)" />
-                        <stop offset="50%" stopColor="rgba(147, 51, 234, 0.3)" />
-                        <stop offset="100%" stopColor="rgba(20, 184, 166, 0.4)" />
-                      </linearGradient>
-                    </defs>
-                    <line x1="25%" y1="25%" x2="66%" y2="33%" stroke="url(#lineGradient)" strokeWidth="1" opacity="0.7" />
-                    <line x1="33%" y1="66%" x2="75%" y2="66%" stroke="url(#lineGradient)" strokeWidth="1" opacity="0.5" />
-                    <line x1="50%" y1="50%" x2="25%" y2="25%" stroke="url(#lineGradient)" strokeWidth="1" opacity="0.6" />
-                    <line x1="75%" y1="25%" x2="33%" y2="66%" stroke="url(#lineGradient)" strokeWidth="1" opacity="0.4" />
-                  </svg>
-                </div>
-              </div>
-            </div>
+         <section className="relative max-w-6xl mx-auto px-6">
+  {/* Background */}
+  <div 
+    className="absolute inset-0 -z-10 rounded-3xl bg-cover bg-center"
+    style={{
+      backgroundImage: `url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1920&auto=format&fit=crop)`
+    }}
+  >
+    <div className="absolute inset-0 bg-black/75 rounded-3xl" />
+  </div>
 
-            <div className="relative z-10 py-16">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
-                Welcome to Hornet Platform
-              </h1>
-              <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed drop-shadow-md">
-                Master the art of coding and advance in understanding profound 
-                <span className="block mt-2 text-white font-semibold">
-                  algorithmic wisdom through deliberate practice
-                </span>
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                  Start Your Journey
-                </button>
-                <button className="px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
-                  Explore Wisdom
-                </button>
-              </div>
-            </div>
-          </section>
+  <div className="relative z-10 py-20 grid md:grid-cols-2 gap-10 items-center">
+    
+    {/* LEFT CONTENT */}
+    <div className="text-left">
+      
+      {/* Newspaper badge */}
+      <p className="uppercase tracking-[0.2em] text-sm text-gray-300 mb-4 font-serif">
+        The Hornet Journal
+      </p>
 
+      {/* Title */}
+      <h1 className="font-serif text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+        The Future of Learning
+        <span className="block text-gray-300 italic text-2xl md:text-3xl mt-2">
+          is Written by You
+        </span>
+      </h1>
+
+      {/* Divider line */}
+      <div className="w-16 h-[2px] bg-white/50 mb-6"></div>
+
+      {/* Description */}
+      <p className="text-lg text-gray-300 leading-relaxed mb-8">
+        A modern platform where knowledge meets practice. Explore curated courses,
+        solve real problems, and build mastery through structured learning paths
+        inspired by academic rigor and real-world application.
+      </p>
+
+      {/* Buttons */}
+      <div className="flex gap-4 flex-wrap">
+        <button className="px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition">
+          Start Learning
+        </button>
+
+        <button className="px-8 py-4 border border-white/40 text-white rounded-lg hover:bg-white/10 transition backdrop-blur-sm">
+          Read Courses
+        </button>
+      </div>
+    </div>
+
+    {/* RIGHT VISUAL */}
+    <div className="relative">
+      
+      {/* Card container */}
+      <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-2xl">
+        
+        {/* "Newspaper" header */}
+        <div className="flex justify-between items-center mb-4">
+          <span className="font-serif text-white text-lg">Daily Knowledge</span>
+          <span className="text-xs text-gray-400">Edition 01</span>
+        </div>
+
+        {/* Fake article */}
+        <div className="space-y-3 text-gray-200 text-sm leading-relaxed">
+          <p className="font-semibold text-white">
+            Breaking: Students Learn Faster with Practice-Based Systems
+          </p>
+          <p>
+            New approaches in education emphasize active problem solving,
+            allowing learners to internalize concepts more efficiently...
+          </p>
+        </div>
+
+        {/* Code block visual */}
+        <div className="mt-6 bg-black/70 rounded-lg p-4 font-mono text-sm text-green-400 overflow-hidden">
+{`function learn(skill) {
+  practice(skill);
+  fail();
+  improve();
+  return mastery;
+}`}
+        </div>
+
+        {/* Floating glow */}
+        <div className="absolute -top-6 -right-6 w-24 h-24 bg-purple-500/30 blur-3xl rounded-full"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
           {/* Our Services Section */}
           <section className="py-16">
             <div className="text-center mb-12">

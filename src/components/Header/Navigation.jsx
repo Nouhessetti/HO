@@ -10,6 +10,7 @@ const Navigation = ({ className = "", vertical = false }) => {
     { name: 'Products', path: '/products' },
     { name: 'News', path: '/news' },
     { name: 'Kata', path: '/kata' },
+    { name: 'Kata2', path: '/kata2' },
   ];
 
   // Dropdown menu items

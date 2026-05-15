@@ -1,0 +1,26 @@
+/* 1. Force the outer container to match your grid section */
+.pdf-viewer-jail {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column;
+  overflow: hidden; /* Prevent the PDF from "bleeding" out */
+}
+
+/* 2. Target the library's actual rendering viewport */
+.pdf-viewer-jail [data-rp-layout="default"],
+.pdf-viewer-jail .rp-default-layout, 
+.pdf_viewer {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important; /* This allows the viewer to shrink */
+  flex: 1 !important;
+}
+
+/* 3. Handle the Scroll Area */
+.pdf-viewer-jail [data-rp-pages="true"] {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center; /* Center the PDF pages */
+}

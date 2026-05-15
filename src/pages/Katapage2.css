@@ -1,0 +1,20 @@
+.main-kata{
+    box-sizing: border-box;
+    margin: 150px 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+.main-kata > div {
+    border: 0.1px solid grey;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pdf_container{
+  
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
